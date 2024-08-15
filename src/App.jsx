@@ -19,7 +19,7 @@ const App = () => {
     <>
       <div
         id="quote-box"
-        style={quote === "" ? { display: "none" } : { display: "block" }}
+        style={quote.trim() === "" ? { display: "none" } : { display: "block" }}
       >
         <p id="text">
           <svg
@@ -28,11 +28,11 @@ const App = () => {
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g
               id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             ></g>
             <g id="SVGRepo_iconCarrier">
               {" "}
